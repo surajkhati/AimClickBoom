@@ -2,16 +2,6 @@ import pygame, random, shelve
 pygame.init()
 pygame.font.init()
 
-'''
-	Todo:
-		1. Add sprites []
-		2. Add powerup (autoaim) []
-		3. Add difficulty levels []
-		4. Add Highscore []
-		5. Add Particle Effects []
-'''
-
-
 screen_size = (800, 600)
 health = 100
 score  = 0
@@ -102,8 +92,11 @@ class SoundClass:
 		self.health_up = pygame.mixer.Sound('health_up.wav')
 		self.hurt = pygame.mixer.Sound('hurt.wav')
 
-		self.bg_music = pygame.mixer.music.load('bg_music.mp3')
-		pygame.mixer.music.play(-1, 0.0)
+		# Commented out because .mp3 did not work on Linux.
+		# Uncomment if your machine supports it.
+		
+		# self.bg_music = pygame.mixer.music.load('bg_music.mp3')
+		# pygame.mixer.music.play(-1, 0.0)
 sounds = SoundClass()
 
 class EnemyClass:
