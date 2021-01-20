@@ -1,4 +1,4 @@
-# YetAnotherShmup!
+# AimClickBoom!
 A 2-D side-scrolling shoot-em-up with aiming made in Pygame.
 
 Todo:
